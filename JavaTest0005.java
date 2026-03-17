@@ -1,9 +1,9 @@
 class Pattern
 {
-   void PrintPattern()
+   void PrintPattern(int rows)
    {
     int num = 1;
-        for (int i = 1; i <= 5; i++) {        
+        for (int i = 1; i <= rows; i++) {        
             for (int j = 1; j <= i; j++) {    
                 System.out.print(num + " ");
                 num++;
@@ -15,6 +15,6 @@ class Pattern
 public class JavaTest0005 {
     public static void main(String[] args) {
      Pattern p1 = new Pattern();
-     p1.PrintPattern();
+     p1.PrintPattern(5);
     }
 }
